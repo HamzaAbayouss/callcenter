@@ -7,9 +7,10 @@ use App\Models\Objet;
 class ObjetRepository implements ObjetRepositoryInterface
 {
     /**
-     * Récupérer un objet par sa référence.
+     * Récupérer un objet à partir de sa référence unique.
      *
-     * @param string $reference
+     *
+     * @param string $reference La référence de l'objet
      * @return \App\Models\Objet|null
      */
     public function getObjetByReference(string $reference)
