@@ -35,6 +35,7 @@ const userId = window.Laravel.user.id;
 window.Echo.private("App.Models.User." + userId).listen(
     ".ticket.assigned",
     (e) => {
+        // Affichage du toast
         Swal.fire({
             toast: true,
             position: "top-end",
@@ -47,7 +48,5 @@ window.Echo.private("App.Models.User." + userId).listen(
         <div><a href="${e.url}" target="_blank" style="color:#0d6efd;text-decoration:underline;">Voir le ticket</a></div>
     `,
         });
-
-        // Affichage du toast
     }
 );

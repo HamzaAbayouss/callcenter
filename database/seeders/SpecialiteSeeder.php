@@ -14,9 +14,9 @@ class SpecialiteSeeder extends Seeder
     public function run(): void
     {
         DB::table('specialites')->insert([
-            ['nom' => 'Informatique'],
-            ['nom' => 'Télécom'],
-            ['nom' => 'Commercial'],
+            ['nom' => 'Mobile'],
+            ['nom' => 'Fixe'],
+            ['nom' => 'Internet'],
         ]);
     }
 }

@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             SpecialiteSeeder::class,
             ObjetSeeder::class,
             UserSeeder::class,
-            // CallTicketSeeder::class,
+            CallTicketSeeder::class,
         ]);
     }
 }
